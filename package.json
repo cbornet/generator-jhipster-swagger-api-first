@@ -1,6 +1,6 @@
 {
   "name": "generator-jhipster-swagger-api-first",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "JHipster module to support API first development using swagger",
   "keywords": [
     "yeoman-generator",
