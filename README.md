@@ -61,6 +61,10 @@ public class PetStore implements PetApi, StoreApi, UserApi {
 }
 ```
 
+# Running the Swagger Editor locally
+
+You can start a local instance of the swagger-editor using docker by running: `docker-compose -f src/main/docker/swagger-editor.yml up -d`. The editor will then be reachable at [http://localhost:7742](http://localhost:7742).
+
 # License
 
 Apache-2.0 © [Christophe Bornet](https://github.com/cbornet)
