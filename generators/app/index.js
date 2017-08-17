@@ -78,6 +78,10 @@ module.exports = JhipsterGenerator.extend({
         const javaDir = `${jhipsterConstants.SERVER_MAIN_SRC_DIR + this.packageFolder}/`;
         const resourceDir = jhipsterConstants.SERVER_MAIN_RES_DIR;
         const webappDir = jhipsterConstants.CLIENT_MAIN_SRC_DIR;
+        const dockerDir = jhipsterConstants.DOCKER_DIR;
+
+        // custom variables
+        this.DOCKER_SWAGGER_EDITOR = "swaggerapi/swagger-editor:latest"
 
         // variable from questions
         //this.message = this.props.message;
@@ -106,6 +110,7 @@ module.exports = JhipsterGenerator.extend({
 
             this.addMavenPlugin('io.swagger', 'swagger-codegen-maven-plugin', '2.2.3', executions)
             this.template('_api.yml', resourceDir + 'swagger/api.yml');
+            this.template('_swagger-editor.yml', dockerDir + '/swagger-editor.yml');
         }
 
 
