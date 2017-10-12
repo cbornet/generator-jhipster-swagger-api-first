@@ -1,2 +1,0 @@
-hello swagger-api-first:entity sub generator!
-It's dummy.txt
